@@ -123,6 +123,14 @@ public class simulador {
 		frame.getContentPane().add(lblTelefono);
 		
 		JButton btnAceptar = new JButton("Aceptar");
+		btnAceptar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				
+  
+				
+			}
+		});
 		btnAceptar.setBounds(181, 351, 91, 23);
 		frame.getContentPane().add(btnAceptar);
 		
@@ -185,7 +193,7 @@ public class simulador {
 		frame.getContentPane().add(comboBox);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Public\\Pictures\\Sample Pictures\\Jellyfish.jpg"));
+		lblNewLabel.setIcon(new ImageIcon("imagenes\\b.jpg"));
 		lblNewLabel.setBounds(0, 0, 442, 387);
 		frame.getContentPane().add(lblNewLabel);
 	}

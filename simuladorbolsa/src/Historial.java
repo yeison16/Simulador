@@ -52,8 +52,23 @@ public class Historial extends JFrame {
 		contentPane.setLayout(null);
 		
 		JButton btnNewButton = new JButton("Registrarase");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) 
+			{
+				Proceso miProceso = new Proceso();
+				miProceso.setVisible(true);
+				extracted();
+			
+			}
+
+		private void extracted()
+		{
+			hide();
+		}
+		});
 		btnNewButton.setBounds(50, 96, 113, 23);
 		contentPane.add(btnNewButton);
+		
 		
 		JButton btnNewButton_1 = new JButton("Logeo");
 		btnNewButton_1.setBounds(390, 96, 113, 23);
@@ -64,6 +79,7 @@ public class Historial extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
+		
 		btnNewButton_2.setBounds(211, 126, 113, 23);
 		contentPane.add(btnNewButton_2);
 		
