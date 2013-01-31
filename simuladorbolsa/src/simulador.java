@@ -193,7 +193,8 @@ public class simulador {
 		frame.getContentPane().add(comboBox);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("imagenes\\b.jpg"));
+		String fs = System.getProperty("file.separator");
+		lblNewLabel.setIcon(new ImageIcon("imagenes"+fs+"b.jpg"));
 		lblNewLabel.setBounds(0, 0, 442, 387);
 		frame.getContentPane().add(lblNewLabel);
 	}

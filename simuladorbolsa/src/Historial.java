@@ -55,16 +55,10 @@ public class Historial extends JFrame {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) 
 			{
-				Proceso miProceso = new Proceso();
-				miProceso.setVisible(true);
-				extracted();
+			
 			
 			}
 
-		private void extracted()
-		{
-			hide();
-		}
 		});
 		btnNewButton.setBounds(50, 96, 113, 23);
 		contentPane.add(btnNewButton);
@@ -85,8 +79,14 @@ public class Historial extends JFrame {
 		
 		JButton btnNewButton_3 = new JButton("Historial");
 		btnNewButton_3.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+			public void actionPerformed(ActionEvent arg0) 
+			{
+				Proceso miProceso = new Proceso();
+				miProceso.setVisible(true);
+				hide();
+				setDefaultCloseOperation(1);
 			}
+			
 		});
 		btnNewButton_3.setBounds(598, 126, 113, 23);
 		contentPane.add(btnNewButton_3);
